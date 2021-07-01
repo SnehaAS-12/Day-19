@@ -90,13 +90,3 @@ myresult = mycursor.fetchall()
 
 for x in myresult:
     print(x)
-mycursor = mydb.cursor()
-
-mycursor.execute("SELECT NAME FROM student WHERE CGPA >6")
-
-myresult = mycursor.fetchall()
-
-for x in myresult:
-    print(x)
-mydb.commit()
-mydb.close()
